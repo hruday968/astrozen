@@ -4,7 +4,7 @@ export const SITE_CONFIG: SiteConfig = {
   title: "Hruday Pabbisetty — Software Engineer",
   author: "Hruday Pabbisetty",
   description:
-    "Software Engineer based in Tempe, Arizona, USA.",
+      "Backend-focused Software Engineer based in Tempe, Arizona, USA, who loves solving challenging problems and building reliable systems. Passionate about problem-solving, distributed systems, and turning complex ideas into scalable production solutions.",
   lang: "en",
   siteLogo: "/hp.jpg",
   navLinks: [
@@ -26,7 +26,7 @@ export const SITE_CONTENT: SiteContent = {
     name: "Hruday Pabbisetty",
     specialty: "Software Engineer",
     summary:
-      "Software Engineer based in Tempe, Arizona, USA.",
+        "Backend-focused Software Engineer based in Tempe, Arizona, USA, who loves solving challenging problems and building reliable systems. Passionate about problem-solving, distributed systems, and turning complex ideas into scalable production solutions.",
     email: "hrudaipabbisetty@gmail.com",
   },
   experience: [
@@ -40,7 +40,7 @@ export const SITE_CONTENT: SiteContent = {
         "Architected a real-time diagnostics platform using Kubernetes Pod Events API to proactively detect deployment anomalies. Reduced incident triage time by 80% and improved deployment success from 95% to 97%.",
         "Built and deployed an internal tool for Skype for Business (SFB) that cut onboarding setup time by 95.8%—from 12 hours to 30 minutes—saving support teams hours per customer and streamlining activation across the US Navy.",
         "Designed and launched a real-time security microservice that automatically mitigated active threats on on-prem servers without requiring software patches. Prevented compromise of thousands of enterprise servers and enabled instant containment with zero downtime, even in legacy environments.",
-        " Developed dual-channel push notification architecture for Skype for Business to ensure iOS 13 compliance, enabling 100% reliable delivery of both VoIP and Non-VoIP messages through Apple Push Notification Service (APNS) and ensuring uninterrupted communication.",
+        "Developed dual-channel push notification architecture for Skype for Business to ensure iOS 13 compliance, enabling 100% reliable delivery of both VoIP and Non-VoIP messages through Apple Push Notification Service (APNS) and ensuring uninterrupted communication.",
         "Engineered a high-impact HTTP security filter that blocked 100% of malicious web requests, preventing CVE-grade exploits in Skype for Business, widely adopted across teams as a standard for securing web endpoints."
       ],
     },
@@ -60,32 +60,51 @@ export const SITE_CONTENT: SiteContent = {
       startDate: "Jul 2017",
       endDate: "Jan 2020",
       summary: [
-        "Created and published algorithmic problems with well-defined constraints, edge cases, and test data for CodeChef programming contests.",
-        "Reviewed and validated peer submissions, ensuring clarity, correctness, and alignment with contest standards."
+        "Created and published high-quality algorithmic problems with well-defined constraints, clear statements, and strong edge-case coverage for global competitive programming contests.",
+        "Designed exhaustive test cases spanning edge conditions, constraint boundaries, randomized inputs, and stress scenarios to ensure complete correctness and prevent hard-coded or suboptimal solutions.",
+        "Reviewed and validated peer problem sets, ensuring clarity, correctness, balanced difficulty, and alignment with CodeChef’s contest standards for thousands of participants worldwide.",
       ],
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
+      name: "Distributed Data Processing Platform (PostgreSQL, RocksDB, Neo4j)",
+      summary: [
+        "Designed a mini distributed-storage stack with horizontal sharding (range + round-robin), improving data distribution and enabling efficient partition-aware query execution.",
+        "Built optimized ingestion pipelines using PostgreSQL COPY and RocksDB WriteBatch, ensuring reliable loading of 10M+ Reddit records with fault-tolerant recovery paths.",
+        " Implemented core LSM-tree storage-engine primitives (MultiGet, Iterator, Delete) in RocksDB to support high-throughput read/write workloads.",
+        "Deployed PageRank and BFS graph analytics on a Docker-orchestrated Neo4j environment, installing GDS and automating end-to-end graph processing."
+      ],
       linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
+      name: "LLM-Driven Deployment Failure RCA Bot | Microsoft Hackathon 2024",
+      summary: [
+        "Built a bot that takes a deployment ID, fetches rollout logs, events, pod states, and config diffs, and uses an OpenAI reasoning model to generate clear Root Cause Analysis (RCA) for failed deployments.",
+        "Detected patterns like CrashLoopBackOff, ImagePullError, resource issues, and config mismatches using LLM-based log analysis.",
+        "Validated results against past failures to achieve high-accuracy RCA, reduce investigation time by 70%, and deliver consistent, standardized diagnostic reports.",
+      ],
       linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
+      name: "Compiler & Custom Programming Language | Python, PLY (Lex/Yacc), AST, Interpreter",
+      summary: [
+        "Designed and implemented a custom programming language with support for numeric types, booleans, strings, conditionals, loops, and typed variable assignments as required.",
+        "Built a complete lexer and parser using Python’s PLY (Lex/Yacc) to tokenize input, enforce EBNF grammar rules, and generate a structured Abstract Syntax Tree (AST) for semantic evaluation",
+        "Developed a runtime interpreter/virtual machine to execute the AST, manage symbol tables, evaluate expressions, and handle control-flow constructs with correct variable scoping.",
+        "Created comprehensive sample programs, documentation, and demonstrations showcasing end-to-end compilation and execution of the language.",
+      ],
       linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+    },
+    {
+      name: "Zoom Meeting Assistant - Classmate Buddy for students",
+      summary: [
+        "Designed an AI-powered Zoom assistant that summarized live transcripts every 10 minutes using Gemini LLM, achieved 70% manual effort reduction in notetaking and 30% boost in assignment submissions.",
+        "Integrated CrewAI and Notion API to automate Notion updates and Gmail API for assignment detection and email reminders",
+        "Orchestrated async workers for summarization and email sync; introduced rate limiting and health checks to stabilize workloads.",
+        "Led a 5-person hackathon team to ship MVP in 24 hours; owned backlog, scoped roles, and won 1st place.",
+      ],
+      linkSource: "https://github.com/immois/astro-zen",
     },
   ],
   about: {
