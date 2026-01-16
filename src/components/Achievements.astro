@@ -1,0 +1,18 @@
+---
+import Section from "./Section.astro";
+import type { AchievementProps } from "@types";
+
+interface Props {
+  achievements: string[];
+}
+
+const { achievements } = Astro.props;
+---
+
+<Section text="Achievements" href="achievements">
+  <ul class="list-disc space-y-2 pl-5 text-neutral">
+    {achievements.map((item: unknown) => (
+      <li>{item}</li>
+    ))}
+  </ul>
+</Section>

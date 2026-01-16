@@ -10,6 +10,7 @@ export const SITE_CONFIG: SiteConfig = {
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
+    { text: "Achievements", href: "#achievements" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
@@ -107,6 +108,12 @@ export const SITE_CONTENT: SiteContent = {
       linkSource: "https://github.com/immois/astro-zen",
     },
   ],
+  achievements: [
+  "Secured 26th rank in the ACM-ICPC Asia Amritapuri Regionals 2017, competing against 200+ top teams across India.",
+  "Achieved a peak LeetCode rating of 2424, placing in the top 0.1% of competitive programmers worldwide",
+  "Candidate Master on Codeforces with a rating of 1900+, placing among the top competitive programmers globally",
+  "Recognized with multiple internal awards at Microsoft for high-impact projects",
+],
   about: {
     description: `
       Hi, I’m Hruday Pabbisetty, a backend-focused Software Engineer with over 5 years of experience building large-scale distributed systems and cloud infrastructure at Microsoft.

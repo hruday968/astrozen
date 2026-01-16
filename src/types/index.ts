@@ -7,11 +7,13 @@ export interface SiteConfig extends HeaderProps {
   socialImage: string;
   canonicalURL?: string;
 }
+export type Achievements = string[];
 
 export interface SiteContent {
   hero: HeroProps;
   experience: ExperienceProps[];
   projects: ProjectProps[];
+  achievements: Achievements;
   about: AboutProps;
 }
 
@@ -34,6 +36,10 @@ export interface ProjectProps {
   name: string;
   summary: string[];
   linkSource?: string;
+}
+
+export interface AchievementProps {
+  name: string[];
 }
 
 export interface AboutProps {
