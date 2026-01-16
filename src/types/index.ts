@@ -14,6 +14,7 @@ export interface SiteContent {
   experience: ExperienceProps[];
   projects: ProjectProps[];
   achievements: Achievements;
+  certifications: Certification[];
   about: AboutProps;
 }
 
@@ -41,6 +42,12 @@ export interface ProjectProps {
 export interface AchievementProps {
   name: string[];
 }
+
+export type Certification = {
+  name: string;
+  url: string;
+};
+
 
 export interface AboutProps {
   description: string;

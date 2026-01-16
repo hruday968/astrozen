@@ -1,0 +1,29 @@
+---
+import Section from "./Section.astro";
+import type { Certification } from "@types";
+
+interface Props {
+  certifications: Certification[];
+}
+
+const { certifications } = Astro.props;
+---
+
+<Section text="Certifications" href="certifications">
+  <div class="grid gap-4">
+    {certifications.map((c) => (
+      <div class="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-neutral/20 bg-black p-6">
+        <p class="text-neutral">{c.name}</p>
+
+        <a
+          href={c.url}
+          target="_blank"
+          rel="noreferrer"
+          class="rounded-xl border border-neutral/30 bg-white/5 px-4 py-2 text-sm text-white hover:bg-white/10"
+        >
+          Credentials
+        </a>
+      </div>
+    ))}
+  </div>
+</Section>

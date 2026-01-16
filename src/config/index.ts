@@ -11,6 +11,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "Achievements", href: "#achievements" },
+    { text: "Certifications", href: "#certifications" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
@@ -114,6 +115,21 @@ export const SITE_CONTENT: SiteContent = {
   "Candidate Master on Codeforces with a rating of 1900+, placing among the top competitive programmers globally",
   "Recognized with multiple internal awards at Microsoft for high-impact projects",
 ],
+certifications: [
+  {
+    name: "CodeChef Certified Data Structures and Algorithms Programme (Advanced level).",
+    url: "https://www.codechef.com/certificates/public/87bbbde",
+  },
+  {
+    name: "CodeChef Certified Data Structures and Algorithms Programme (Foundation level).",
+    url: "https://www.codechef.com/certificates/public/5e1cde4",
+  },
+    {
+    name: "Akuna Capital Options 101.",
+    url: "https://drive.google.com/file/d/1gf64jI-Vp57fZoS2dbABw9kEbaH4R2nT/view?usp=sharing",
+  },
+],
+
   about: {
     description: `
       Hi, I’m Hruday Pabbisetty, a backend-focused Software Engineer with over 5 years of experience building large-scale distributed systems and cloud infrastructure at Microsoft.
