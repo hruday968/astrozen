@@ -35,7 +35,7 @@ export const SITE_CONTENT: SiteContent = {
     {
       company: "Microsoft",
       position: "Software Engineer II",
-      startDate: "Jun 2019",
+      startDate: "Jun 2022",
       endDate: "Nov 2024",
       summary: [
         "Led cross-functional efforts to engineer an automated Kubernetes pruning system that deleted 6,000+ orphaned resources across clusters, slashing security risks and compute costs by millions, while boosting deployment success rate by 2%",
@@ -49,8 +49,8 @@ export const SITE_CONTENT: SiteContent = {
     {
       company: "Amazon",
       position: "Software Development Intern",
-      startDate: "May 2018",
-      endDate: "Jul 2018",
+      startDate: "May 2021",
+      endDate: "Jul 2021",
       summary: [
         "Spearheaded the development of scheduling APIs that replaced a 6-hour manual vendor workflow with real-time automation, enhancing reliability and vendor satisfaction.",
         "Built a DynamoDB validation layer to detect data mismatches post-migration, fixing critical sync issues that previously caused system failures. Reduced production discrepancies by 90%, significantly improving migration confidence and rollout stability.",
@@ -59,8 +59,8 @@ export const SITE_CONTENT: SiteContent = {
     {
       company: "CodeChef",
       position: "DSA Problem Curator (Freelance)",
-      startDate: "Jul 2017",
-      endDate: "Jan 2020",
+      startDate: "Jul 2020",
+      endDate: "Jan 2022",
       summary: [
         "Created and published high-quality algorithmic problems with well-defined constraints, clear statements, and strong edge-case coverage for global competitive programming contests.",
         "Designed exhaustive test cases spanning edge conditions, constraint boundaries, randomized inputs, and stress scenarios to ensure complete correctness and prevent hard-coded or suboptimal solutions.",
